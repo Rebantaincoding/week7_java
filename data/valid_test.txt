@@ -1,0 +1,262 @@
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 1
+Enter backup description: User Database Backup
+Enter number of data items: 3
+Enter key: users_count
+Enter data type (String/Integer/Double/Boolean): String
+Enter value: 1500
+Enter key: last_backup
+Enter data type (String/Integer/Double/Boolean): String
+Enter value: 2024-10-12
+Enter key: backup_size_mb
+Enter data type (String/Integer/Double/Boolean): Double
+Enter value: 2450.75
+JSON exported successfully!
+Backup created successfully!
+Files created:
+  • backups/backup_20261104_220033.dat
+  • backups/backup_20261104_220033.dat.gz
+  • backups/backup_20261104_220033.csv
+  • backups/backup_20261104_220033.json
+Backup ID: 00768169-b13c-4dd8-bea2-aecacb9d8a01
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 4
+Enter CSV file path: backups/backup_20261104_220033.csv
+
+CSV imported successfully!
+Imported Data: {users_count=1500, backup_size_mb=2450.75, last_backup=2024-10-12}
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 1
+Enter backup description: Application Settings Backup
+Enter number of data items: 5
+Enter key: app_name
+Enter data type (String/Integer/Double/Boolean): String
+Enter value: Employee Management System
+Enter key: app_version
+Enter data type (String/Integer/Double/Boolean): String
+Enter value: 3.1.12
+Enter key: dark_mode
+Enter data type (String/Integer/Double/Boolean): Boolean
+Enter value: true
+Enter key: storage_limit_gb
+Enter data type (String/Integer/Double/Boolean): Double
+Enter value: 3.2
+Enter key: default_language
+Enter data type (String/Integer/Double/Boolean): String
+Enter value: English
+JSON exported successfully!
+Backup created successfully!
+Files created:
+  • backups/backup_20261104_220303.dat
+  • backups/backup_20261104_220303.dat.gz
+  • backups/backup_20261104_220303.csv
+  • backups/backup_20261104_220303.json
+Backup ID: 7acdaa09-a2bb-495f-8d4e-c035896eb2c0
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 1
+Enter backup description: System Configuration
+Enter number of data items: 2
+Enter key: backup_date
+Enter data type (String/Integer/Double/Boolean): String
+Enter value: 2026-02-27
+Enter key: backup_size_mb
+Enter data type (String/Integer/Double/Boolean): Double
+Enter value: 320.5
+JSON exported successfully!
+Backup created successfully!
+Files created:
+  • backups/backup_20261104_220411.dat
+  • backups/backup_20261104_220411.dat.gz
+  • backups/backup_20261104_220411.csv
+  • backups/backup_20261104_220411.json
+Backup ID: 4b2f12b0-64a6-44d8-aa34-b0745af2de58
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 2
+Enter binary file path: backups/backup_20261104_220303.dat
+
+Backup restored successfully!
+Backup ID: 7acdaa09-a2bb-495f-8d4e-c035896eb2c0
+Time: 2026-11-04 22:03:03
+Description: Application Settings Backup
+Data Items: 5
+Data: {storage_limit_gb=3.2, app_name=Employee Management System, app_version=3.1.12, dark_mode=true, default_language=English}
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 3
+Enter compressed file path: backups/backup_20261104_220411.dat.gz
+
+Backup restored successfully!
+Backup ID: 4b2f12b0-64a6-44d8-aa34-b0745af2de58
+Time: 2026-11-04 22:04:11
+Description: System Configuration
+Data Items: 2
+Data: {backup_size_mb=320.5, backup_date=2026-02-27}
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 5
+Enter JSON file path: backups/backup_20261104_220303.json
+
+JSON imported successfully!
+{
+    "storage_limit_gb": {
+        "type": "Double",
+        "value": 3.2
+    },
+    "app_name": {
+        "type": "String",
+        "value": "Employee Management System"
+    },
+    "app_version": {
+        "type": "String",
+        "value": "3.1.12"
+    },
+    "dark_mode": {
+        "type": "Boolean",
+        "value": true
+    },
+    "default_language": {
+        "type": "String",
+        "value": "English"
+    }
+}
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 6
+
+========== BACKUP VERSIONS ==========
+Backup ID: 4b2f12b0-64a6-44d8-aa34-b0745af2de58
+Time: 2026-11-04 22:04:11
+Description: System Configuration
+Data Items: 2
+Data: {backup_size_mb=320.5, backup_date=2026-02-27}
+----------------------------
+Backup ID: 7acdaa09-a2bb-495f-8d4e-c035896eb2c0
+Time: 2026-11-04 22:03:03
+Description: Application Settings Backup
+Data Items: 5
+Data: {storage_limit_gb=3.2, app_name=Employee Management System, app_version=3.1.12, dark_mode=true, default_language=English}
+----------------------------
+Backup ID: 00768169-b13c-4dd8-bea2-aecacb9d8a01
+Time: 2026-11-04 22:00:33
+Description: User Database Backup
+Data Items: 3
+Data: {users_count=1500, backup_size_mb=2450.75, last_backup=2024-10-12}
+----------------------------
+Backup ID: 9422a1b4-9e61-455e-966a-33dd628ba81e
+Time: 2026-11-04 21:29:45
+Description: Applications Settings Backup
+Data Items: 4
+Data: {app_name=Employee Management System, storage occupied=3.2, app_version=3.2.11, last_backup=2025-09-15}
+----------------------------
+Backup ID: e2ed7b38-ae69-4a83-a59f-bce824c5eb73
+Time: 2026-11-04 21:27:02
+Description: System Configuation Backup
+Data Items: 2
+Data: {data_size(in mb)=450.0, last_backup=2026-10-01}
+----------------------------
+Backup ID: f05dc14e-44f1-408d-bb1a-bf5508dd54fa
+Time: 2026-11-04 21:23:29
+Description: User Database Backup
+Data Items: 3
+Data: {users_count=1500, database_size_mb=2450.75, last_backup=2024-01-15}
+----------------------------
+Backup ID: 873d2432-fb6c-4617-adc5-07c7cf45bc42
+Time: 2026-11-04 21:17:35
+Description: user data backup
+Data Items: 3
+Data: {user_count=1500, database_size_mb=2450.75, last_backup=2024-01-15}
+----------------------------
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 7
+Enter number of days to retain backups: 2
+Backup cleanup completed.
+
+========== DATA BACKUP SYSTEM ==========
+1. Create Backup
+2. Restore Backup from Binary File
+3. Restore Backup from Compressed File
+4. Import Data from CSV
+5. Import Data from JSON
+6. List All Backup Versions
+7. Cleanup Old Backups
+8. Exit
+Enter your choice: 8
+Exiting Data Backup System...
